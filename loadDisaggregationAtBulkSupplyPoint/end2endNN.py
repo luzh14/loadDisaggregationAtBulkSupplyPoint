@@ -8,7 +8,7 @@ X = dataset['loadData'][:,:]
 print(X)
 Y = dataset['weight'][:,:]
 print(Y)
-# 定义多层感知机的网络 3个输入节点，20个隐藏节点，8个输出节电
+# 定义多层感知机的网络 3个输入节点，20个隐藏节点，8个输出节点
 model = Sequential()
 model.add(Dense(20, input_dim=3, activation='relu'))
 model.add(Dense(8, activation='sigmoid'))
